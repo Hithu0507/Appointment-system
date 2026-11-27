@@ -1,0 +1,361 @@
+/* ==========================================================================
+   GLOBAL APP STYLES & HERO SECTION
+   ========================================================================== */
+
+.home-wrapper {
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+/* HERO SECTION */
+.hero {
+  min-height: 640px;
+  padding: 80px 7% 100px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  background: linear-gradient(180deg, #f0f6ff 0%, #ffffff 100%);
+  position: relative;
+}
+
+.hero-content {
+  flex: 1.1;
+  max-width: 620px;
+}
+
+.hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  border: 1px solid #bfdbfe;
+}
+
+.hero h1 {
+  font-size: 54px;
+  line-height: 1.15;
+  color: #0f172a;
+  margin-bottom: 20px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.hero h1 span {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 34px;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+}
+
+.hero-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.4);
+}
+
+.hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #334155;
+  padding: 16px 26px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1.5px solid #e2e8f0;
+  transition: all 0.25s ease;
+}
+
+.hero-btn-secondary:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+
+.hero-trust-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.metric-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.metric-pill i {
+  color: #2563eb;
+  font-size: 15px;
+}
+
+/* HERO PREVIEW CARD */
+.hero-image {
+  flex: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-card {
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  padding: 34px 30px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(37, 99, 235, 0.12);
+  border: 1px solid #eef2f6;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.booking-card h3 {
+  color: #0f172a;
+  font-size: 24px;
+  margin-bottom: 6px;
+  font-weight: 800;
+}
+
+.card-description {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.booking-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  border: 1.5px solid #f1f5f9;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.booking-item:hover {
+  border-color: #bfdbfe;
+  background: #f8faff;
+  transform: translateX(4px);
+}
+
+.booking-icon {
+  width: 44px;
+  height: 44px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.booking-item-text {
+  flex: 1;
+}
+
+.booking-item-text h4 {
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.booking-item-text p {
+  color: #64748b;
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.item-arrow {
+  color: #cbd5e1;
+  font-size: 13px;
+  transition: transform 0.2s ease;
+}
+
+.booking-item:hover .item-arrow {
+  color: #2563eb;
+  transform: translateX(3px);
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 18px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+}
+
+.card-bottom:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+}
+
+/* 404 NOT FOUND PAGE */
+.not-found-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.not-found-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.not-found-content h1 {
+  font-size: 32px;
+  color: #0f172a;
+  margin: 16px 0 8px 0;
+}
+
+.not-found-content p {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+/* RESPONSIVE DESIGN FOR HERO */
+@media (max-width: 992px) {
+  .hero {
+    padding: 60px 5%;
+    gap: 40px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 868px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 6% 80px 6%;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-trust-metrics {
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .booking-card {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 4% 60px 4%;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-btn,
+  .hero-btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .booking-card {
+    padding: 24px 18px;
+  }
+}
